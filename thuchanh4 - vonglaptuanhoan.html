@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+
+    </tr>
+</table>
+</body>
+</html>
+<script>
+    // let sout
+    // sout = "<table border='1' width='300' cellspacing='0' cellpadding='3'>";
+    // sout = sout+ "<tr>"
+    // sout = sout+ "<td>iavuebviwuvbe</td>>"
+    //
+    // sout = sout+ "</tr>"
+    // sout = sout+ "</table>"
+    //
+    // document.write(sout)
+    let table = "<table border='1' width='300' cellspacing='0' cellpadding='3'>"
+    for (i=1; i<11; i++, table= table+"</tr>") {
+        for (j=1; j<11; j++) {
+            // data += i + "-"+ j+"---"
+            if (i==0 || j==0){
+                table += "<td>"+i+"</td>"
+            } else {
+                table += "<td>"+i*j+"</td>"
+            }
+        }
+        table += "<tr>"
+    }
+    table = table+ "</table>"
+document.write(table)
+</script>
